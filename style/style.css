@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 12px 200px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+.header-links {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex:1;
+}
+
+.info {
+    width: 200px;
+    padding: 16px;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.sign-up {
+    display: flex;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
