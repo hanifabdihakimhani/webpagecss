@@ -1,14 +1,14 @@
 body {
     display: flex;
     flex-direction: column;
-    margin: 12px 200px;
+    margin: 0;
+    height: 100vh;
 }
 
 #header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex: 1;
 }
 
 #header-links {
@@ -17,7 +17,14 @@ body {
     gap: 20px;
 }
 
+#body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
 #main {
+    flex: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,11 +76,13 @@ h1 {
 }
 
 .sign-up {
+    flex: 1;
     display: flex;
 }
 
-.footer {
+#footer {
     display: flex;
-    flex-direction: column;
-    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
 }
