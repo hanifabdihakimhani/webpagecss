@@ -5,6 +5,11 @@ body {
     height: 100vh;
 }
 
+#header,
+#body {
+    margin: 10px 120px;
+}
+
 #header {
     display: flex;
     justify-content: space-between;
@@ -58,26 +63,69 @@ h1 {
     flex:1;
 }
 
-.info {
-    width: 200px;
-    padding: 16px;
-}
-
 .boxes {
     display: flex;
     flex-wrap: wrap;
     flex: 1 0 auto;
+    justify-content: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    padding: 16px;
+}
+
+.info img {
+    background-color: aqua;
+    height: 100px;
+}
+
+.info p {
+    text-align:center;
 }
 
 .quote {
     display: flex;
     flex-direction: column;
     flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote em,
+strong {
+    width: 500px;
+    margin: 0;
+    padding: 0;
+}
+
+strong {
+    text-align: end;
+}
+
+.padding {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sign-up {
     flex: 1;
     display: flex;
+    background-color: blue;
+    padding: 16px 100px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text h3,
+.text p {
+    margin: 0;
+    padding: 0;
 }
 
 #footer {
