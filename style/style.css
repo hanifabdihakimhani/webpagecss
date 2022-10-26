@@ -5,38 +5,60 @@ body {
     height: 100vh;
 }
 
-#header,
-#body {
-    margin: 10px 120px;
+.top,
+.mid-top,
+.mid-low,
+.low {
+    flex: 1;
 }
 
-#header {
+.top,
+.footer {
+    background-color: #1f2937;
+}
+
+.mid-low,
+.low {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid-low {
+    background: #e7e7eb;
+}
+
+.low {
+    margin: 0px 120px;
+}
+
+.header,
+.main,
+.information {
+    margin: 0px 120px;
+    padding-bottom: 48px;
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#header-links {
+.header-links {
     display: flex;
     list-style-type: none;
     gap: 20px;
 }
 
-#body {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-}
-
-#main {
-    flex: 1;
+.main {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 48px;
 }
 
-#title {
+.title {
     flex-direction: column;
     flex: 1;
 }
@@ -45,22 +67,19 @@ h1 {
     margin: 0px;
 }
 
-#main-text {
+.main-text {
     margin: 0 0 5px;
 }
 
-#main-image {
+.main-image {
     background-color: grey;
     flex: 1;
-    height: 200px;
-    width: 300px;
 }
 
 .information {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex:1;
 }
 
 .boxes {
@@ -89,16 +108,12 @@ h1 {
 .quote {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    justify-content: center;
     align-items: center;
 }
 
 .quote em,
 strong {
     width: 500px;
-    margin: 0;
-    padding: 0;
 }
 
 strong {
@@ -107,15 +122,12 @@ strong {
 
 .padding {
     flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .sign-up {
     flex: 1;
     display: flex;
-    background-color: blue;
+    background-color: #3882f6;
     padding: 16px 100px;
     border-radius: 10px;
     align-items: center;
@@ -128,9 +140,8 @@ strong {
     padding: 0;
 }
 
-#footer {
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gray;
 }
