@@ -5,38 +5,46 @@ body {
     height: 100vh;
 }
 
-.top,
-.mid-top,
-.mid-low,
-.low {
-    flex: 1;
-}
-
+.top-header,
 .top,
 .footer {
     background-color: #1f2937;
 }
 
+.top,
+.mid-top {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mid-top {
+    padding-bottom: 64px;
+}
+
 .mid-low,
 .low {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 64px 0px;
 }
 
 .mid-low {
     background: #e7e7eb;
 }
 
-.low {
-    margin: 0px 120px;
+.header,
+.main {
+    margin: 0px 240px;
+    padding-bottom: 100px;
 }
 
-.header,
-.main,
-.information {
-    margin: 0px 120px;
-    padding-bottom: 48px;
+.padding {
+    flex: 1;
+    margin: 0px 240px;
 }
 
 .header {
@@ -49,6 +57,17 @@ body {
     display: flex;
     list-style-type: none;
     gap: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    color: #f9faf8; 
+    font-weight: 500;   
+}
+
+.header-links {
+    font-size: 18px;
+    color: #e5e7eb;
 }
 
 .main {
@@ -65,10 +84,24 @@ body {
 
 h1 {
     margin: 0px;
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
 }
 
 .main-text {
     margin: 0 0 5px;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+button {
+    padding: 5px 24px;
+    border-radius: 7px;
+    background-color: #3882f6;
+    color: white;
+    font-weight: 700;
+    border-color:  #3882f6;
 }
 
 .main-image {
@@ -82,6 +115,12 @@ h1 {
     align-items: center;
 }
 
+h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+}
+
 .boxes {
     display: flex;
     flex-wrap: wrap;
@@ -92,46 +131,52 @@ h1 {
 .info {
     display: flex;
     flex-direction: column;
-    width: 120px;
+    align-items: center;
     padding: 16px;
 }
 
 .info img {
     background-color: aqua;
-    height: 100px;
+    height: 150px;
+    width: 150px;
 }
 
 .info p {
     text-align:center;
+    width: 150px;
 }
 
 .quote {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
 }
 
 .quote em,
 strong {
-    width: 500px;
+    margin: 0px 330px;
 }
 
-strong {
+.quote strong {
     text-align: end;
-}
-
-.padding {
-    flex: 1;
 }
 
 .sign-up {
     flex: 1;
     display: flex;
     background-color: #3882f6;
-    padding: 16px 100px;
+    padding: 48px 100px;
     border-radius: 10px;
     align-items: center;
     justify-content: space-between;
+    color: white;
+}
+
+.sign-up button {
+    border-color: white;
+    border-width: 3px;
 }
 
 .text h3,
@@ -144,4 +189,5 @@ strong {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #f9faf8;
 }
