@@ -72,7 +72,6 @@ body {
 
 .main {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 48px;
 }
@@ -105,8 +104,13 @@ button {
 }
 
 .main-image {
+    flex:1;
+    display: flex;
     background-color: grey;
-    flex: 1;
+    max-width: 500px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
 }
 
 .information {
@@ -136,7 +140,9 @@ h2 {
 }
 
 .info img {
-    background-color: aqua;
+    border-style: solid;
+    border-color: aqua;
+    border-width: 5px;
     height: 150px;
     width: 150px;
 }
